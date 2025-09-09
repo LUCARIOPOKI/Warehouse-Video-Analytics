@@ -1,15 +1,37 @@
-from dotenv import load_dotenv, set_key
+from dotenv import load_dotenv
 from google.genai import types
 from google import genai
 from pathlib import Path
 import time
 import json
 import os
+import re
 
 load_dotenv()
 
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-folder_path = Path("onlyHumansFrame_10s_output_clips")  # folder containing the clips to be analyzed
+folder_path = Path("onlyHumansFrame_10s_output_clips")  # folder containing the 10 sec clips to be analyzed
+
+def safe_parse_json(llm_response: str):
+    if not llm_response or not llm_response.strip():
+        print("⚠️ Empty response from LLM!")
+        return {}
+
+    match = re.search(r"\{.*\}", llm_response, re.DOTALL)
+    if not match:
+        print("⚠️ No JSON found in response!")
+        print("Raw response:", llm_response)
+        return {}
+
+    json_str = match.group(0)
+
+    try:
+        return json.loads(json_str)
+    except json.JSONDecodeError as e:
+        print("⚠️ JSON decode failed:", e)
+        print("Raw JSON candidate:", json_str)
+        return {}
+
 
 def mishandling_detection(video_file_name):
     video_bytes = open(video_file_name, 'rb').read()
@@ -23,13 +45,12 @@ def mishandling_detection(video_file_name):
 
                 ACTIONS TO DETECT (definitions & boundaries)
                 1) parcel throwing → A person propels a parcel through the air with noticeable force so it leaves their hand(s) and travels ballistically. Distinguish from: gently placing/handing over, short drops under 0.5 m without force.
-                2) parcel sliding → A person pushes a parcel across a surface so it maintains contact with that surface while moving. Distinguish from: rolling, carrying, lifting & placing.
-                3) kicking/stepping on parcel → A foot makes deliberate contact with a parcel, either:
+                2) kicking/stepping on parcel → A foot makes deliberate contact with a parcel, either:
                    • kicking: striking the parcel with the foot to move or impact it, or
                    • stepping: placing body weight on the parcel (full or partial) while standing/walking.
                    Accidental light brushes or near-misses do NOT qualify.
-                4) lying on the conveyor belts → A person’s torso and hips are in contact with the conveyor belts for ≥ 1 second. Kneeling or squatting is NOT lying.
-                5) running on conveyor belts → A person runs (faster than a walking gait) with one or both feet on a MOVING conveyor belt. Running beside or across the belt (on the floor) does NOT qualify. Walking on a belt also qualifies.
+                3) lying on the conveyor belts → A person’s torso and hips are in contact with the conveyor belts for ≥ 1 second. Kneeling or squatting is NOT lying.
+                4) running on conveyor belts → A person runs (faster than a walking gait) with one or both feet on a MOVING conveyor belt. Running beside or across the belt (on the floor) does NOT qualify. Walking on a belt also qualifies.
 
                 DECISION RULES
                 - Mark an action true ONLY if the visual evidence is clear (≥ 0.8 confidence). If unclear, occluded, off-frame, or blurred: mark false.
@@ -44,11 +65,11 @@ def mishandling_detection(video_file_name):
 
                 OUTPUT FORMAT (STRICT JSON):
                 Dont mention anything else other than the JSON object below.
-                **STRICT** Dont mention "json" in your response.
+                **STRICT**: Dont mention "json" name in your response.
+                
                 {
                   "Explanation": "brief explanation of the actions detected",
                   "has_parcel_throwing": true or false,
-                  "has_parcel_sliding": true or false,
                   "has_kicking": true or false,
                   "has_lying": true or false,
                   "has_running": true or false
@@ -61,7 +82,6 @@ def mishandling_detection(video_file_name):
 
                 """,
             temperature=0.1,
-            # max_output_tokens=200
             ),
         contents=types.Content(
             parts=[
@@ -74,18 +94,13 @@ def mishandling_detection(video_file_name):
     )
 
     print("\n--- RESPONSE ---\n")
-    # print(type(response.text))
-    # print(response.text)
     llm_response = response.text
-    cleaned_response = llm_response.strip().removeprefix("json").strip()
-    cleaned_response = cleaned_response.strip().removeprefix("json").strip()
-    print("Cleaned response:", cleaned_response)
-    dict_response = json.loads(cleaned_response) 
-    if dict_response["has_parcel_throwing"] or dict_response["has_parcel_sliding"] or dict_response["has_kicking"] or dict_response["has_lying"] or dict_response["has_running"]:
+    dict_response = safe_parse_json(llm_response)
+    if dict_response["has_parcel_throwing"]  or dict_response["has_kicking"] or dict_response["has_lying"] or dict_response["has_running"]:
         print("Mishandling Detected!\n")
         print(llm_response, "\n")
         with open("mishandling_detected.txt", "a") as f:
-            f.write(f"{video_file_name}\n")
+            f.write(f"{video_file_name}\n{llm_response}\n\n")
     else:
         print("No mishandling detected.\n")
 
@@ -93,11 +108,19 @@ def mishandling_detection(video_file_name):
     
 
 if __name__ == "__main__":
+    start_time = time.time()
+    iterations = 0
     for file in folder_path.iterdir():
+        iterations += 1
+        if iterations % 3 == 0:
+            print("Taking a 60 seconds break to avoid The model is overloaded error...\n")
+            time.sleep(10)
         if file.is_file():
             print("processing: ", file, "\n")
             mishandling_detection(str(file))
         print("--------------------------------------------------\n")
+    end_time = time.time()
+    print(f"Total execution time: {end_time - start_time} seconds")
     print("\n --------------------Execution ended--------------------")
 
 
@@ -106,7 +129,7 @@ if __name__ == "__main__":
 # print(values["has_parcel_throwing"])
 
 # python gemini_object_detection.py
-# ? 7 iterations before hitting The model is overloaded error
+# Total execution time: 1326.9321360588074 seconds
 
 # Mishandling Detected clips
 # throwing:

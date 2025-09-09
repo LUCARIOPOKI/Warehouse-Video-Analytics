@@ -1,2 +1,178 @@
-onlyHumansFrame_10s_output_clips\clip_1010_1020.mp4
-onlyHumansFrame_10s_output_clips\clip_1040_1050.mp4
+
+onlyHumansFrame_10s_output_clips\clip_1100_1110.mp4
+{
+  "Explanation": "A worker is observed tossing a parcel into a bag with a short ballistic arc (0:03-0:04). No kicking, stepping, lying on conveyor belts, or running on conveyor belts was observed.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_110_120.mp4
+{
+  "Explanation": "A person was observed nudging a parcel with their foot at 00:03 and stepping on a parcel, placing body weight on it, at 00:08-00:09. No parcel throwing, lying on conveyor belts, or running on conveyor belts was observed.",
+  "has_parcel_throwing": false,
+  "has_kicking": true,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_1150_1160.mp4
+{
+  "Explanation": "A person is observed walking on a moving conveyor belt for a few seconds, which qualifies as 'running on conveyor belts' as per the definition. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.",
+  "has_parcel_throwing": false,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": true
+}
+
+onlyHumansFrame_10s_output_clips\clip_1170_1180.mp4
+{
+  "Explanation": "A worker is observed throwing a parcel with a ballistic arc onto a pile of other parcels at approximately 00:08. No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_130_140.mp4
+{
+  "Explanation": "A person is observed walking on a moving conveyor belt from 00:01 to 00:03, which qualifies as 'running on conveyor belts' as per the definition. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed; only carrying and gentle placing of parcels occurred.",
+  "has_parcel_throwing": false,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": true
+}
+
+onlyHumansFrame_10s_output_clips\clip_310_320.mp4
+{
+  "Explanation": "A person used their foot to deliberately push a parcel on the floor at 00:08, which qualifies as kicking. No other specified actions were observed; only carrying and gentle placing of parcels occurred.",
+  "has_parcel_throwing": false,
+  "has_kicking": true,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_340_350.mp4
+{
+  "Explanation": "Parcel throwing was observed at 0:03 and 0:06, where individuals propelled parcels through the air with noticeable force onto the conveyor belts. No instances of kicking/stepping on parcels, lying on conveyor belts, or running/walking on conveyor belts were clearly observed.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_350_360.mp4
+{
+  "Explanation": "A person in a blue shirt is observed throwing a parcel at 00:07, propelling it through the air with a ballistic arc. No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed; only carrying and gentle placing of parcels occurred otherwise.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_410_420.mp4
+```json
+{
+  "Explanation": "A person is observed throwing a parcel with a ballistic arc from the conveyor belt area towards a stack on the floor. No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+```
+
+onlyHumansFrame_10s_output_clips\clip_440_450.mp4
+{
+  "Explanation": "Worker 2 used his foot to nudge a parcel on the floor to reposition it, which qualifies as kicking/stepping on a parcel. No parcel throwing, lying on conveyor belts, or running on conveyor belts was observed; only carrying and gentle placing of parcels.",
+  "has_parcel_throwing": false,
+  "has_kicking": true,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_540_550.mp4
+{
+  "Explanation": "Multiple instances of parcel throwing were observed, where individuals propelled parcels through the air with noticeable force, causing them to travel ballistically from their hands to a stack. No clear instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_550_560.mp4
+{
+  "Explanation": "A person was observed stepping on parcels and then kicking a parcel with their foot, propelling it a short distance.",
+  "has_parcel_throwing": false,
+  "has_kicking": true,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_580_590.mp4
+{
+  "Explanation": "Parcel throwing observed at 00:01 and 00:06, where a person propelled parcels through the air with noticeable force, causing them to travel ballistically. No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_620_630.mp4
+{
+  "Explanation": "Multiple instances of parcel throwing are observed where workers propel parcels through the air with noticeable force, causing them to travel ballistically before landing. No kicking, stepping, lying, or running on conveyor belts is observed.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_690_700.mp4
+{
+  "Explanation": "A person is observed throwing a parcel onto the conveyor belt with a ballistic arc. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_880_890.mp4
+{
+  "Explanation": "A person is observed throwing a parcel onto the conveyor belt with a clear ballistic arc. No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_90_100.mp4
+```json
+{
+  "Explanation": "Two instances of parcel throwing were observed where individuals propelled white bags into larger collection bags with noticeable force and ballistic arc. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed; only carrying and gentle placing or tossing into collection bags.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+```
+
+onlyHumansFrame_10s_output_clips\clip_910_920.mp4
+{
+  "Explanation": "A person is observed tossing a large parcel bag onto a pile at 00:05-00:06, where it leaves their hands and travels through the air with a short ballistic arc. No other specified actions were observed.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+
+onlyHumansFrame_10s_output_clips\clip_920_930.mp4
+```json
+{
+  "Explanation": "A person in a black shirt is observed throwing a small white parcel with a ballistic arc at 00:09. No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed.",
+  "has_parcel_throwing": true,
+  "has_kicking": false,
+  "has_lying": false,
+  "has_running": false
+}
+```
+
