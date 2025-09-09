@@ -1,0 +1,16 @@
+.env
+detection.py
+base.py
+
+/10s_output_2ndclips
+/10s_output_clips
+/Conveyor_10s_output_clips
+/onlyHumansFrame_10s_output_clips
+/output_clips
+/output_human_clips.mp4
+/docs
+/gdex_warehouse
+/logs
+/human_clips
+/sample vids
+
