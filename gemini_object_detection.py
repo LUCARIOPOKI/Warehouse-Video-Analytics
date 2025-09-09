@@ -104,9 +104,6 @@ def mishandling_detection(video_file_name):
     else:
         print("No mishandling detected.\n")
 
-# print(mishandling_detection("onlyHumansFrame_10s_output_clips/clip_1130_1140.mp4"))
-    
-
 if __name__ == "__main__":
     start_time = time.time()
     iterations = 0
@@ -123,50 +120,5 @@ if __name__ == "__main__":
     print(f"Total execution time: {end_time - start_time} seconds")
     print("\n --------------------Execution ended--------------------")
 
-
-# print(response.usage_metadata)
-# values = json.loads(response.text)
-# print(values["has_parcel_throwing"])
-
 # python gemini_object_detection.py
 # Total execution time: 1326.9321360588074 seconds
-
-# Mishandling Detected clips
-# throwing:
-"10s_output_2ndclips/clip_40_50.mp4"
-"10s_output_2ndclips/clip_50_60.mp4"
-"10s_output_2ndclips/clip_90_100.mp4"
-"10s_output_2ndclips/clip_140_150.mp4"
-# Running:
-"Conveyor_10s_output_clips/clip_1130_1140.mp4"
-
-"""   You are a helpful assistant that analyzes CCTV videos to detect specific mishandling actions.  
-Look at the video and identify if any of the following actions are being performed by individuals in the video.
-Look very carefully and make sure you don't miss any action.
-You have to classify the actions in the video to one of the following: 
-    - parcel throwing
-    - parcel sliding 
-    - stepping 
-    - lying 
-    - running on conveyor belts. 
-
-If an action is present in the video, mark it as true, otherwise false.
-    - if the action is not clear, mark it as false.
-    - If a person in the video is thwrowing a parcel, mark "has_parcel_throwing" as true.
-    - If a person in the video is sliding a parcel, mark "has_parcel_sliding" as true.
-    - If a person in the video is kicking or stepping on a parcel, mark "has_kicking" as true.
-    - If a person in the video is lying on the ground, mark "has_lying" as true.
-    - If a person in the video is running on conveyor belts, mark "has_running" as true.
-    - If none of these actions are present, mark all as false.
-
-Explain your reasoning briefly in the "Explanation" field.
-Just Return the output as JSON 
-in the following format:
-`{
-    "Explanation": "brief explanation of the actions detected",
-    "has_parcel_throwing": true | false,
-    "has_parcel_sliding": true | false", 
-    "has_kicking": true | false, 
-    "has_lying": true | false, 
-    "has_running": true | false,
-}`"""
