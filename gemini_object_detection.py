@@ -10,7 +10,7 @@ import re
 load_dotenv()
 
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-folder_path = Path("onlyHumansFrame_10s_output_clips")  # folder containing the 10 sec clips to be analyzed
+folder_path = Path("onlyHumansFrame_throwing_positive_10s_output_clips")  # folder containing the 10 sec clips to be analyzed
 
 def safe_parse_json(llm_response: str):
     if not llm_response or not llm_response.strip():
@@ -36,7 +36,7 @@ def safe_parse_json(llm_response: str):
 def mishandling_detection(video_file_name):
     video_bytes = open(video_file_name, 'rb').read()
 
-    print(f"processing video...{video_file_name}")
+    # print(f"processing video...{video_file_name}")
     response = client.models.generate_content(
         model='models/gemini-2.5-flash',
         config=types.GenerateContentConfig(
@@ -107,18 +107,40 @@ def mishandling_detection(video_file_name):
 if __name__ == "__main__":
     start_time = time.time()
     iterations = 0
+    
+    with open("mishandling_detected.txt", "a") as f:
+            f.write(f"------------------------files from {folder_path} folder--------------------------\n")
+    
     for file in folder_path.iterdir():
         iterations += 1
-        if iterations % 3 == 0:
-            print("Taking a 60 seconds break to avoid The model is overloaded error...\n")
-            time.sleep(10)
+        
         if file.is_file():
-            print("processing: ", file, "\n")
+            print(f"File No: {iterations} ")
+            print("processing: ", file)
             mishandling_detection(str(file))
+
+        if iterations % 3 == 0:
+            print("Taking a 10 seconds break to avoid The model is overloaded error...\n")
+            time.sleep(10)
+
         print("--------------------------------------------------\n")
     end_time = time.time()
     print(f"Total execution time: {end_time - start_time} seconds")
     print("\n --------------------Execution ended--------------------")
 
 # python gemini_object_detection.py
-# Total execution time: 1326.9321360588074 seconds
+
+# Throwing Negative:
+# Time to extract humans: 20 mins 
+# Time to split the clip for 10s each: 3 mins
+# Time to analyze the clips: 22 mins # Total: 45 mins 
+
+# conveyor negative 
+# Time to extract humans: 17 mins 
+# Time to split the clip for 10s each: 3 mins
+# Time to analyze the clips: 20 mins # Total: 40 mins 
+
+# Throwing Positive:
+# Time to extract humans: 10 mins
+# Time to split the clip for 10s each: 2 mins
+# Time to analyze the clips: 15 mins # Total: 27 mins

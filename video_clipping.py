@@ -20,6 +20,6 @@ def split_video_into_clips(video_path, output_dir, clip_duration):
 
     video.close()
 
-split_video_into_clips("human_clips/output_human_clips.mp4", "onlyHumansFrame_10s_output_clips", clip_duration=10)
+split_video_into_clips("human_clips/output_human_clips_throwing_positive.mp4", "onlyHumansFrame_throwing_positive_10s_output_clips", clip_duration=10)
 
 # python video_clipping.py

@@ -13,4 +13,5 @@ base.py
 /logs
 /human_clips
 /sample vids
-
+/onlyHumansFrame_conveyor_negative_10s_output_clips
+/onlyHumansFrame_throwing_positive_10s_output_clips
