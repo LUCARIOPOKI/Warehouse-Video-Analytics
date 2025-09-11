@@ -367,3 +367,96 @@ onlyHumansFrame_throwing_positive_10s_output_clips\clip_640_650.mp4
   "has_running": false
 }
 
+
+================================================================================
+Processing session started: 2025-09-11T15:16:16.945135
+Folder: onlyHumansFrame_throwing_positive_10s_output_clips
+Files to process: 78
+================================================================================
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_260_270.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: A person is observed throwing a parcel with a clear ballistic arc onto the conveyor belt at approximately 00:03-00:04. No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed; only carrying and gentle placing of parcels were seen otherwise.
+Processing time: 6.42s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_370_380.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A worker is observed walking on a moving conveyor belt from 00:03 to 00:06. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 8.35s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_400_410.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: A worker is observed throwing a parcel onto the main conveyor belt at approximately 00:08, propelling it through the air with noticeable force. No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed; workers were primarily carrying and placing parcels or walking on the floor.
+Processing time: 7.14s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_40_50.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: A person is observed throwing a parcel with a clear ballistic arc from their hands onto the ground at approximately 00:01-00:02. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 7.33s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_440_450.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt from approximately 00:04 to 00:09. No instances of parcel throwing, kicking/stepping on parcels, or lying on conveyor belts were observed.
+Processing time: 6.91s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_480_490.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: A person is observed throwing a small parcel at 00:05, propelled through the air with noticeable force. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 8.77s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_50_60.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Multiple instances of parcel throwing were observed, where individuals propelled parcels through the air with noticeable force, causing them to travel ballistically. No kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 7.75s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_550_560.mp4
+Mishandling detected: Throwing=False, Kicking=True, Lying=False, Running=False
+Explanation: Workers were observed using their feet to deliberately nudge or push parcels, which qualifies as kicking. No instances of parcel throwing, lying on conveyor belts, or running on conveyor belts were observed.
+Processing time: 9.20s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_560_570.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: A person in a blue shirt is observed throwing parcels onto a pile at 0:03 and 0:06, with the parcels traveling through the air with a ballistic arc. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 8.52s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_580_590.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Parcel throwing is observed at 00:00-00:01 and 00:07-00:08, where a person propels parcels through the air with noticeable force, causing them to travel ballistically onto the pile. No kicking, stepping, lying, or running on conveyor belts was observed.
+Processing time: 9.28s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_640_650.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: The person in the foreground is observed throwing a parcel onto a pile at the 00:07 mark, characterized by the parcel leaving their hand and traveling through the air with a ballistic arc. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed.
+Processing time: 13.11s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_650_660.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Parcel throwing is observed at 00:04 and 00:09 as a person propels parcels through the air with a ballistic arc towards the pile on the conveyor belt. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 8.38s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_680_690.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Parcel throwing observed as a person propels parcels through the air with noticeable force onto a pile on the conveyor belt (e.g., at 00:03 and 00:06). No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 7.11s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_690_700.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Parcel throwing was observed multiple times, with individuals propelling parcels through the air with noticeable force and ballistic arcs onto the sorting area (e.g., at 00:01, 00:05, 00:07). No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed.
+Processing time: 7.47s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_90_100.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: A person is observed throwing a parcel with a clear ballistic arc and noticeable force at 0:06. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 13.45s
+
+
+================================================================================
+Processing session completed: 2025-09-11T15:32:20.103455
+Total files: 78
+Successfully processed: 78
+Failed: 0
+Mishandling detected: 15
+Success rate: 100.0%
+Total duration: 963.17 seconds = 16 mins
+================================================================================
+

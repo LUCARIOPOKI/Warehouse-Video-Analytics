@@ -45,7 +45,7 @@ def detect_human_segments(video_path, model, confidence_threshold):
         human_detected = False
         for result in results:
             for box in result.boxes:
-                # The 'person' class in the COCO dataset is 0
+    
                 if int(box.cls[0]) == 0 and box.conf[0] >= confidence_threshold:
                     human_detected = True
                     break
@@ -65,7 +65,6 @@ def detect_human_segments(video_path, model, confidence_threshold):
     if not human_present_frames:
         return []
 
-    # Convert frame numbers to timestamps in seconds
     human_timestamps = np.array(human_present_frames) / fps
     
     print("Step 2: Consolidating detected frames into time segments...")
@@ -78,18 +77,14 @@ def detect_human_segments(video_path, model, confidence_threshold):
 
     for t in human_timestamps[1:]:
         if t <= end_time + MERGE_GAP_SECONDS:
-            # This frame is close to the current segment, so extend the segment
             end_time = t
         else:
-            # The gap is too large, so end the current segment and start a new one
             segments.append((start_time, end_time))
             start_time = t
             end_time = t
     
-    # Add the last segment to the list
     segments.append((start_time, end_time))
     
-    # Add a small buffer to the end time to ensure the last action is fully captured
     final_segments = [(start, end + (1/fps)) for start, end in segments]
     print(f"-> Found {len(final_segments)} distinct human-present segments.")
     
@@ -115,7 +110,6 @@ def extract_and_save_clips(video_path, segments, output_path):
         original_video = VideoFileClip(video_path)
         final_clips = []
         for i, (start, end) in enumerate(segments):
-            # Ensure the clip has a valid duration
             if end > start:
                 print(f"  - Extracting clip {i+1}/{len(segments)}: from {start:.2f}s to {end:.2f}s")
                 clip = original_video.subclip(start, end)
@@ -129,7 +123,6 @@ def extract_and_save_clips(video_path, segments, output_path):
         final_video = concatenate_videoclips(final_clips)
         final_video.write_videofile(output_path, codec="libx264", audio_codec="aac")
         
-        # Clean up resources
         for clip in final_clips:
             clip.close()
         original_video.close()
@@ -141,12 +134,10 @@ def extract_and_save_clips(video_path, segments, output_path):
 
 
 if __name__ == "__main__":
-    # --- Check for input video ---
     if not os.path.exists(VIDEO_SOURCE_PATH):
         print(f"Error: Input video '{VIDEO_SOURCE_PATH}' not found.")
         print("Please place your video in the same directory and name it 'input.mp4', or update the VIDEO_SOURCE_PATH variable.")
     else:
-        # --- Load the YOLO model ---
         print(f"Loading YOLO model ('{MODEL_NAME}'). This may take a moment...")
         try:
             yolo_model = YOLO(MODEL_NAME)
@@ -154,6 +145,5 @@ if __name__ == "__main__":
             print(f"Error loading YOLO model: {e}")
             print("Please ensure the 'ultralytics' package is installed correctly.")
         else:
-            # --- Run the detection and extraction process ---
             human_segments = detect_human_segments(VIDEO_SOURCE_PATH, yolo_model, CONFIDENCE_THRESHOLD)
             extract_and_save_clips(VIDEO_SOURCE_PATH, human_segments, OUTPUT_VIDEO_PATH)
