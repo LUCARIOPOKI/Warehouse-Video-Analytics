@@ -16,6 +16,8 @@ This will help improve operational efficiency, reduce damages, and enhance workp
 - Extracted video frames containing people and saved them separately.
 - Split the extracted video into **10-second clips**.
 - Processed these clips using Google’s **Gemini model** to identify potential mishandling activities.
+- Added an exception to handle the model overloading and prevent execution from stopping midway.
+- All the Mishandled video Urls will be stored in a text file.
 
 ---
 
@@ -30,18 +32,11 @@ This will help improve operational efficiency, reduce damages, and enhance workp
 
 - **Model Overload Risk:**  
   Continuous processing caused the AI model to overload.  
-  *Solution (in progress):* Adding a short waiting period before processing every 6th clip.
+  *Solution:* Adding a short waiting period before processing every 6th clip.
 
 ---
 
 ## Current Status
-- The solution is **90% complete**.
+- The solution is **100% complete**.
 - Detection of humans and mishandling activities is working effectively.
-- Testing and fine-tuning are ongoing.
-
----
-
-## Next Steps
-- Implement a **5-second pause** before every 6th clip is sent to the Gemini model, to prevent model overload.
-- Conduct final testing with real warehouse footage.
-- Prepare a summary report of detection accuracy and performance.
+- Testing and fine-tuning are done.
