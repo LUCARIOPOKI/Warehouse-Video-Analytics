@@ -460,3 +460,81 @@ Success rate: 100.0%
 Total duration: 963.17 seconds = 16 mins
 ================================================================================
 
+
+================================================================================
+Processing session started: 2025-09-12T10:43:40.572341
+Folder: onlyHumansFrame_throwing_positive_10s_output_clips
+Files to process: 78
+================================================================================
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_210_220.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: A worker is observed throwing a parcel onto the blue conveyor belt at the beginning of the clip, propelling it through the air with noticeable force. No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed; workers were primarily carrying or gently placing parcels.
+Processing time: 7.58s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_260_270.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: A person was observed throwing a parcel onto the main conveyor belt with a clear ballistic arc at approximately 00:03-00:04. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 6.63s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_380_390.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt on the left side of the frame. No instances of parcel throwing, kicking/stepping on parcels, or lying on conveyor belts were observed.
+Processing time: 7.69s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_40_50.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: A person is observed throwing a parcel with a clear ballistic arc at 00:01-00:02. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 8.19s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_480_490.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: At 00:05, a person propels a small parcel through the air with noticeable force, causing it to travel ballistically for a short distance before landing on the floor, which qualifies as parcel throwing. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 7.16s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_50_60.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Two instances of parcel throwing were observed (around 00:00-00:01 and 00:07-00:08), where individuals propelled parcels through the air with noticeable force and a ballistic arc towards the conveyor belt. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 6.54s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_580_590.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Parcel throwing observed at multiple points (e.g., 00:00-00:01, 00:07-00:08), characterized by parcels being propelled through the air with a ballistic arc and noticeable force. No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were detected.
+Processing time: 7.77s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_630_640.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Parcel throwing was observed multiple times as a person propelled parcels with noticeable force, causing them to travel in a ballistic arc onto a pile. No kicking, stepping, lying, or running on conveyor belts was observed.
+Processing time: 8.40s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_640_650.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Parcel throwing was observed at 00:07, where a person propelled a parcel through the air with noticeable force onto a pile. No instances of kicking/stepping on parcels, lying on conveyor belts, or running on conveyor belts were observed.
+Processing time: 6.60s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_650_660.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Two instances of parcel throwing were observed (around 00:04 and 00:09), where a person propelled parcels through the air with noticeable force, causing them to travel ballistically before landing on the pile of other parcels on the conveyor belt. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 6.87s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_680_690.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Parcel throwing observed at multiple instances (e.g., 00:03, 00:06), characterized by parcels being propelled through the air with noticeable force onto a pile. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 8.52s
+
+onlyHumansFrame_throwing_positive_10s_output_clips\clip_90_100.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: A person is observed throwing a parcel with a ballistic arc towards a pile of other parcels at approximately 0:06. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 6.79s
+
+
+================================================================================
+Processing session completed: 2025-09-12T10:57:43.007273
+Total files: 78
+Successfully processed: 78
+Failed: 0
+Mishandling detected: 12
+Success rate: 100.0%
+Total duration: 842.45 seconds
+================================================================================
+

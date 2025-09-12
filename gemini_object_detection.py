@@ -99,13 +99,10 @@ class VideoMishandlingDetector:
         self.batch_size = batch_size
         self.stats = ProcessingStats()
         
-        # Setup logging
         self._setup_logging(log_level)
         
-        # Initialize API client
         self.client = self._initialize_client()
         
-        # Create output directory if needed
         self.output_file.parent.mkdir(parents=True, exist_ok=True)
         
         self.logger.info(f"Initialized VideoMishandlingDetector for folder: {self.folder_path}")
@@ -115,10 +112,8 @@ class VideoMishandlingDetector:
         self.logger = logging.getLogger(self.__class__.__name__)
         self.logger.setLevel(getattr(logging, log_level.upper()))
         
-        # Clear existing handlers
         self.logger.handlers.clear()
         
-        # Create formatters
         detailed_formatter = logging.Formatter(
             '%(asctime)s - %(name)s - %(levelname)s - %(funcName)s:%(lineno)d - %(message)s'
         )
@@ -173,8 +168,8 @@ class VideoMishandlingDetector:
         
         # Try to extract JSON using regex
         json_patterns = [
-            r"\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}",  # Nested braces
-            r"\{.*\}",  # Simple extraction
+            r"\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}",  
+            r"\{.*\}",  
         ]
         
         json_str = None
@@ -188,7 +183,6 @@ class VideoMishandlingDetector:
             self.logger.warning(f"No JSON found in response: {llm_response[:200]}...")
             return {}
         
-        # Try to parse JSON with multiple attempts
         for attempt in range(2):
             try:
                 parsed = json.loads(json_str)
@@ -198,9 +192,8 @@ class VideoMishandlingDetector:
             except json.JSONDecodeError as e:
                 self.logger.warning(f"JSON decode attempt {attempt + 1} failed: {e}")
                 if attempt == 0:
-                    # Try cleaning the JSON string
-                    json_str = re.sub(r',\s*}', '}', json_str)  # Remove trailing commas
-                    json_str = re.sub(r',\s*]', ']', json_str)  # Remove trailing commas in arrays
+                    json_str = re.sub(r',\s*}', '}', json_str)  
+                    json_str = re.sub(r',\s*]', ']', json_str)   
         
         self.logger.error(f"Failed to parse JSON after all attempts: {json_str[:200]}...")
         return {}
@@ -419,10 +412,8 @@ class VideoMishandlingDetector:
             for i, video_file in enumerate(video_files, 1):
                 self.logger.info(f"Processing file {i}/{self.stats.total_files}: {video_file.name}")
                 
-                # Analyze video
                 result = self._analyze_video_with_retry(video_file)
                 
-                # Update statistics
                 if result.error:
                     self.stats.failed_files += 1
                 else:
@@ -462,7 +453,6 @@ class VideoMishandlingDetector:
         self.logger.info(f"Total duration: {self.stats.duration:.2f} seconds")
         self.logger.info(f"Average per file: {self.stats.duration/self.stats.total_files:.2f}s")
         
-        # Write final statistics to output file
         try:
             with open(self.output_file, 'a', encoding='utf-8') as f:
                 f.write(f"\n{'='*80}\n")
@@ -481,7 +471,6 @@ class VideoMishandlingDetector:
 def main():
     """Main entry point for the video mishandling detection system."""
     try:
-        # Configuration
         config = {
             "folder_path": "onlyHumansFrame_throwing_positive_10s_output_clips",
             "output_file": "mishandling_detected.txt",
@@ -489,11 +478,9 @@ def main():
             "batch_size": 3
         }
         
-        # Initialize and run detector
         detector = VideoMishandlingDetector(**config)
         stats = detector.process_videos()
         
-        # Return exit code based on results
         if stats.failed_files == 0:
             print(f"\n✅ All {stats.total_files} files processed successfully!")
             return 0
@@ -508,7 +495,6 @@ def main():
         print(f"❌ Fatal error: {e}")
         logging.error("Fatal error in main", exc_info=True)
         return 3
-
 
 if __name__ == "__main__":
     exit(main())
