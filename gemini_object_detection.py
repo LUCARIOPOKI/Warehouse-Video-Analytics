@@ -6,20 +6,20 @@ logging, monitoring, and retry mechanisms for detecting mishandling actions in w
 surveillance footage.
 """
 
-import json
-import logging
 import os
 import re
 import time
-from datetime import datetime
+import json
+import logging
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from datetime import datetime
 from dataclasses import dataclass
 from contextlib import contextmanager
+from typing import Dict, List, Optional
 
+from google import genai
 from dotenv import load_dotenv
 from google.genai import types
-from google import genai
 
 
 @dataclass
@@ -472,7 +472,7 @@ def main():
     """Main entry point for the video mishandling detection system."""
     try:
         config = {
-            "folder_path": "onlyHumansFrame_throwing_positive_10s_output_clips",
+            "folder_path": "onlyHumansFrame_conveyor_negative_10s_output_clips",
             "output_file": "mishandling_detected.txt",
             "log_level": "INFO",
             "batch_size": 3

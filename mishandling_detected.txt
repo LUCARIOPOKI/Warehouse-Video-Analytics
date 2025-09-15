@@ -538,3 +538,234 @@ Success rate: 100.0%
 Total duration: 842.45 seconds
 ================================================================================
 
+
+================================================================================
+Processing session started: 2025-09-15T10:15:18.101169
+Folder: onlyHumansFrame_conveyor_negative_10s_output_clips
+Files to process: 114
+================================================================================
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_190_200.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt, which qualifies as 'running on conveyor belts' based on the provided definition. No parcel throwing, kicking/stepping on parcels, or lying on the conveyor belts was observed.
+Processing time: 8.71s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_200_210.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=True, Running=True
+Explanation: A person walks on a moving conveyor belt, then sits on the belt with their torso and hips in contact for several seconds. No parcel throwing or kicking/stepping on parcels was observed.
+Processing time: 14.79s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_220_230.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt from 00:00 to 00:05, which qualifies as 'running on conveyor belts' according to the definition.
+Processing time: 8.15s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_260_270.mp4
+Mishandling detected: Throwing=False, Kicking=True, Lying=False, Running=False
+Explanation: A person is observed kicking a parcel at 0:08-0:09. No parcel throwing, lying on conveyor belts, or running on conveyor belts was observed.
+Processing time: 7.79s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_300_310.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt for the duration of the clip. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed; parcels were handled with gentle placement.
+Processing time: 9.60s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_340_350.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person was observed walking on a moving conveyor belt. No instances of parcel throwing, kicking/stepping on parcels, or lying on the conveyor belt were observed.
+Processing time: 12.92s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_360_370.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: The person on the right walked on a moving conveyor belt from approximately 00:05 to 00:06. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed; only carrying and gentle placing of parcels.
+Processing time: 10.43s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_370_380.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: The person on the right was observed walking on the moving conveyor belt. Other actions like parcel throwing, kicking/stepping on parcels, or lying on the conveyor belts were not observed.
+Processing time: 16.43s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_430_440.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Two instances of parcel throwing were observed, where individuals propelled parcels through the air with noticeable force and a ballistic arc onto the conveyor belt. No kicking, stepping on parcels, lying on conveyor belts, or running on conveyor belts was detected.
+Processing time: 10.92s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_480_490.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person was observed walking on a moving conveyor belt. Other actions included gentle parcel placements and a controlled drop onto a chute, which did not involve throwing, kicking, or lying.
+Processing time: 17.32s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_490_500.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt, which qualifies as running on conveyor belts according to the definition. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 10.83s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_500_510.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=True, Running=False
+Explanation: A person was observed lying on the conveyor belt with their torso and hips in contact with the surface for more than 1 second. No parcel throwing, kicking/stepping on parcels, or running on conveyor belts was observed.
+Processing time: 6.72s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_520_530.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt throughout the clip. No instances of parcel throwing, kicking/stepping on parcels, or lying on the conveyor belts were detected.
+Processing time: 9.50s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_530_540.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt for the duration of the clip, which qualifies as 'running on conveyor belts' according to the definition. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 8.58s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_540_550.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person was observed walking on a moving conveyor belt, which qualifies as 'running on conveyor belts' according to the definition. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 57.37s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_560_570.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person walks on the moving conveyor belt. A parcel was dropped from a height but did not exhibit a ballistic trajectory, so it was not considered throwing. No kicking, stepping on parcels, or lying on belts was observed.
+Processing time: 17.28s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_570_580.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person was observed walking on the moving conveyor belt for several seconds. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 8.08s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_580_590.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person walked on a moving conveyor belt. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 12.09s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_750_760.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=True, Running=False
+Explanation: A person was observed sitting and sliding down the conveyor belt, with their torso and hips in continuous contact with the belt for several seconds, which qualifies as lying on the conveyor belt.
+Processing time: 12.44s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_830_840.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=True, Running=False
+Explanation: A person's torso and hips are in contact with the conveyor belt for the entire duration of the clip, indicating lying on the belt. No parcels were observed, and no running/walking was detected.
+Processing time: 13.40s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_880_890.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=True, Running=True
+Explanation: The person is observed lying on the conveyor belt with their torso and hips in contact for more than 1 second (e.g., 00:01-00:02, 00:07-00:08). They are also walking and shuffling on the moving conveyor belt throughout the clip. No parcel throwing or kicking/stepping on parcels was observed.
+Processing time: 11.71s
+
+
+================================================================================
+Processing session completed: 2025-09-15T10:40:06.251619
+Total files: 114
+Successfully processed: 114
+Failed: 0
+Mishandling detected: 21
+Success rate: 100.0%
+Total duration: 1488.19 seconds
+================================================================================
+
+
+================================================================================
+Processing session started: 2025-09-15T10:41:51.161844
+Folder: onlyHumansFrame_conveyor_negative_10s_output_clips
+Files to process: 114
+================================================================================
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_190_200.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person walks and then runs on the moving conveyor belt.
+Processing time: 12.92s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_200_210.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt at the beginning of the clip. No instances of parcel throwing, kicking/stepping on parcels, or lying on the conveyor belts were observed.
+Processing time: 10.73s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_210_220.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on the moving conveyor belt while sorting and pushing parcels. No instances of parcel throwing, kicking/stepping on parcels, or lying on the conveyor belts were observed.
+Processing time: 8.47s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_220_230.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt, which qualifies as 'running on conveyor belts' according to the definition. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 10.85s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_300_310.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt, which qualifies as 'running on conveyor belts' according to the provided definition. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 12.00s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_370_380.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt, which qualifies as 'running on conveyor belts' according to the provided definition. Parcels were gently placed or slid, not thrown. No kicking, stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 20.45s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_430_440.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: Parcels were propelled through the air with noticeable force and ballistic arcs onto the conveyor belt multiple times, indicating parcel throwing. No kicking, lying, or running on conveyor belts was observed.
+Processing time: 10.15s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_450_460.mp4
+Mishandling detected: Throwing=True, Kicking=False, Lying=False, Running=False
+Explanation: A person is observed throwing parcels and bags down a chute with noticeable force and ballistic arcs. No kicking, stepping, lying, or running on conveyor belts was observed.
+Processing time: 11.43s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_500_510.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=True, Running=False
+Explanation: A person was observed lying on the conveyor belt with their torso and hips in contact for more than 1 second. No parcel throwing, kicking/stepping on parcels, or running on conveyor belts was observed.
+Processing time: 8.20s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_520_530.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is walking on a moving conveyor belt. No parcel throwing, kicking/stepping on parcels, or lying on the conveyor belts was observed.
+Processing time: 10.94s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_530_540.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt, which qualifies as 'running on conveyor belts' according to the provided definition. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 8.47s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_540_550.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person was observed walking on a moving conveyor belt. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 12.43s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_550_560.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person walks on the moving conveyor belt. Only carrying and gentle placing/sliding of parcels observed, no throwing, kicking, or lying.
+Processing time: 11.27s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_560_570.mp4
+Mishandling detected: Throwing=False, Kicking=True, Lying=False, Running=False
+Explanation: A person used their foot to deliberately push a parcel (kicking) at 00:01-00:02. No parcel throwing, lying on belts, or running on belts was observed; parcels were either carried, gently placed, or slid down a ramp.
+Processing time: 17.72s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_570_580.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on the conveyor belt, which qualifies as 'running on conveyor belts' based on the provided definition. No parcel throwing, kicking/stepping on parcels, or lying on conveyor belts was observed.
+Processing time: 7.23s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_580_590.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=False, Running=True
+Explanation: A person is observed walking on a moving conveyor belt, which qualifies as 'running on conveyor belts' according to the provided definition. No parcel throwing, kicking/stepping on parcels, or lying on the conveyor belts was observed.
+Processing time: 8.88s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_790_800.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=True, Running=False
+Explanation: A person is observed sitting on the conveyor belt with their torso and hips in contact for the entire duration of the clip, which qualifies as lying on the conveyor belt. No parcel throwing, kicking, or running on the belts was observed.
+Processing time: 9.59s
+
+onlyHumansFrame_conveyor_negative_10s_output_clips\clip_880_890.mp4
+Mishandling detected: Throwing=False, Kicking=False, Lying=True, Running=True
+Explanation: The person was observed lying on the conveyor belt with their torso and hips in contact for multiple seconds while handling parcels. The person was also walking/shuffling on the moving conveyor belt, which qualifies as 'running on conveyor belts' per the definition.
+Processing time: 13.98s
+
+
+================================================================================
+Processing session completed: 2025-09-15T11:07:13.088522
+Total files: 114
+Successfully processed: 114
+Failed: 0
+Mishandling detected: 18
+Success rate: 100.0%
+Total duration: 1521.93 seconds
+================================================================================
+
